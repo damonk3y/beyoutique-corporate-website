@@ -1,0 +1,28 @@
+export const Process = () => (
+  <svg
+    fill='#000000'
+    width='100%'
+    height='100%'
+    viewBox='0 0 32 32'
+    style={{
+      display: 'block',
+      width: '100%',
+      height: '100%',
+      maxWidth: '64px',
+      maxHeight: '64px',
+    }}
+    xmlns='http://www.w3.org/2000/svg'
+    aria-hidden='true'
+  >
+    <path d='M10,10H2V2h8ZM4,8H8V4H4Z' />
+    <path d='M30,30H22V22h8Zm-6-2h4V24H24Z' />
+    <path d='M20,27H8A6,6,0,0,1,8,15v2a4,4,0,0,0,0,8H20Z' />
+    <path d='M24,17V15a4,4,0,0,0,0-8H12V5H24a6,6,0,0,1,0,12Z' />
+    <path d='M19,11H13l-3,4,6,6,6-6Z' />
+    <rect
+      width='32'
+      height='32'
+      fill='none'
+    />
+  </svg>
+);
