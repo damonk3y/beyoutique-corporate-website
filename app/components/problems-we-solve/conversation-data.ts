@@ -41,7 +41,7 @@ export const CONVO = [
   },
   {
     role: 'owner',
-    text: 'Só a ideia de não fazer tudo manualmente já me sinto mais leve! 🙏',
+    text: 'Só a ideia de não fazer tudo manualmente já me faz sentir mais leve! 🙏',
   },
   {
     role: 'therapist',
@@ -49,7 +49,7 @@ export const CONVO = [
   },
   {
     role: 'owner',
-    text: 'Por favor! Preciso mesmo de respirar um bocadinho — isto anda demais para mim. 🥲',
+    text: 'Por favor! Preciso mesmo de respirar um bocadinho... isto já é demaisado para mim. 🥲',
   },
   {
     role: 'therapist',

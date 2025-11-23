@@ -1,38 +1,12 @@
 'use client';
 
 import React from 'react';
-import { Circle, Square, Triangle, Hexagon } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { SharedCTA } from './shared-cta';
 
-type IconType = 'circle' | 'square' | 'triangle' | 'hexagon';
-
-type NodeCard = {
-  title: string;
-  desc: string;
-  icon: IconType;
-};
-
-function renderIconMinimal(icon: IconType): React.ReactElement {
-  const iconProps = 'h-10 w-10 stroke-[1.3]';
-  switch (icon) {
-    case 'circle':
-      return <Circle className={`${iconProps} text-neutral-800`} />;
-    case 'square':
-      return <Square className={`${iconProps} text-neutral-800`} />;
-    case 'triangle':
-      return <Triangle className={`${iconProps} text-neutral-800`} />;
-    case 'hexagon':
-    default:
-      return <Hexagon className={`${iconProps} text-neutral-800`} />;
-  }
-}
-
-// Grayscale text gradient and never uses accent
 const glowTextGrad =
   'bg-gradient-to-r from-neutral-400 via-neutral-700 to-neutral-950';
 
-// Classy minimalist - underline glow animation
 const subtleGlowUnderline = {
   initial: { opacity: 0, scaleX: 0.92, filter: 'blur(2px)' },
   animate: {
@@ -92,7 +66,7 @@ export const HeroSection: React.FC = () => {
         </span>
       </div>
       <section
-        className='mx-auto flex flex-col gap-12 md:gap-16 lg:gap-20 px-4 pt-28
+        className='mx-auto flex flex-col gap-12 md:gap-16 lg:gap-20 pt-28
           items-center justify-center max-w-4xl md:px-6 md:pb-12 md:pt-32
           lg:px-8 lg:pb-16 lg:pt-40'
       >
@@ -112,8 +86,8 @@ export const HeroSection: React.FC = () => {
                 Queres
               </span>
               <span
-                className='block text-5xl md:text-6xl font-extrabold
-                  text-primary-700 mb-1 text-center'
+                className='block text-4xl font-extrabold text-primary-700 mb-1
+                  text-center'
               >
                 transformar
               </span>

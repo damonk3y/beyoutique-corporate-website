@@ -4,7 +4,7 @@ export const SharedCTA = ({ className = '' }) => {
   return (
     <div className={`text-center ${className}`}>
       <a
-        href='https://wa.me/351935173447?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20vossa%20iniciativa%20para%20boutiques.'
+        href='https://wa.me/351935173447?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20BEYOUTIQUE'
         target='_blank'
         rel='noopener noreferrer'
         className='inline-block px-6 py-2 rounded-lg bg-black text-white
