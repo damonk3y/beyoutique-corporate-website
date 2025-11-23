@@ -1,7 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
-
 const testimonials = [
   {
     name: 'Inês',
@@ -46,32 +44,24 @@ export const Testimonials = () => {
       </div>
 
       <div className='w-full max-w-7xl px-4 md:px-6 lg:px-8'>
-        <motion.h2
+        <h2
           className='text-3xl md:text-3xl lg:text-4xl font-bold text-neutral-900
             mb-6 md:mb-10 lg:mb-16 text-center tracking-tight'
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
         >
           Como é trabalhar com a BEYOUTIQUE?
-        </motion.h2>
+        </h2>
 
         <div
           className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4
             md:gap-5 lg:gap-6'
         >
           {testimonials.map((testimonial, idx) => (
-            <motion.div
+            <div
               key={idx}
               className='group flex flex-col bg-white/60 backdrop-blur-sm
                 rounded-xl border border-neutral-300 p-4 md:p-5
                 hover:bg-white/80 hover:border-neutral-400 transition-all
                 duration-200'
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: idx * 0.05 }}
             >
               <svg
                 className='w-5 h-5 text-primary-700/60 mb-3'
@@ -108,14 +98,9 @@ export const Testimonials = () => {
                   >
                     {testimonial.name}
                   </span>
-                  <span
-                    className='text-xs text-neutral-700 font-medium truncate'
-                  >
-                    {testimonial.whoami}
-                  </span>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
